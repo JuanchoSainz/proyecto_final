@@ -1,85 +1,44 @@
 
-html,body {
-    width: 100%;
-    height: 100vh;
+.border {
+    border: 1px, solid, white;
 }
+
+.card {
+padding: 15px;
+
+}
+
+.fondeando {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 275px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+   }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
-
+    background-color: black;
+          max-width: 1980px;
+   
 }
-
-footer {
-    grid-area: footer;
-    background-color: #000;
-}
-
-header {
-    background-color: #000;
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
+.noticias {
+        justify-content: center;
     
 }
 
-p {
-    line-height: 105%;
-    font-family: 'Roboto', sans-serif;
-    
-}
-/* Grilla estructura del index*/
-#contenedorIndex{
-    
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "logo"
-    "noticias"
-    "sponsors1"
-    "mvp"
-    "sponsors2"
-    "footer"
-    ;
-    grid-template-rows: auto 270px 1fr 20px 1fr 100px auto;
-    width: 100%;
-    height: 100vh;
- 
-}
-/* Grilla estructura reglamento */
-#contenedorReglamento {
-    
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "logo"
-    "reglamento"
-    "footer"
-    ;
-    grid-template-rows: auto 270px 1fr auto;
-    width: 100%;
-    height: 100vh;
- 
-}
-
-
-
-/* Inicio contenedores del footer */
-#contacto {
-    height: auto;
-    position: relative;
-    width: 50%;
-    float: left;  
-}
-#Sociales {
-    height: auto;
-    float: left;
-    
-}
-/* fin contenedores del footer */
 
 /* Comienzo formato y efectos menu y footer */
+
+
+
+.fondo {
+    
+    background-color: black;
+
+}
+
 header a {  
     text-decoration: none;
     color: #ffffff;   
@@ -95,12 +54,14 @@ footer a {
 }
 
 header a:hover   { 
+    text-decoration: none;
     background: #467326;
     color: #0d0d0d;
     font-family: 'Lalezar', cursive;
 }
 
 footer a:hover {
+    text-decoration: none;
     background: #467326;
     color: #0d0d0d;
     font-family: 'Lalezar', cursive;
@@ -139,285 +100,12 @@ li.social {
     max-height: 280px;
 }
 
-ul.menu {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    background: rgb(0, 0, 0);
-    line-height: 25px; 
-}
-
 ul.footer {
     list-style: none; 
     padding: 0;
     margin: 0;
     background: rgb(0, 0, 0);
-    line-height: 25px; 
 
 }
 
-section#logo {
-    grid-area: logo;
-    background-color: #000;
-    
-}
 /* fin formato y efectos menu y footer */
-
-/* Inicio Sección noticias */
-section#noticias {
-    margin-top: 10px;
-    grid-area: noticias;
-    background-color: #000;
-    }
-
-div#NoticiasFecha {
-    margin-top: 10px;
-    background-color: #000;
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;    
-}
-
-div#NoticiasFecha article {
-    width: 320px;
-    height:250px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 11px 5px #142C57; 
-    box-shadow: 0px 0px 11px 5px #142C57;
-    margin: 10px;
-    
-}
-
-div#NoticiasFecha article p {
-    color: #ffffff;
-    margin: 4px;
-    font-size: 16px;
-    text-align: justify;
-}
- 
-div#NoticiasFecha article img {
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 7px;
-    text-align: center;
-}
-
-div#NoticiasFecha article h3 {
-    text-align: center;
-    color: #2fa72f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    line-height: break-word;
-    margin: 4px;
-}
-
-/* fin Seccion noticias */
-
-
-/*Inicio Banner sponsor */
-
-section#sponsors1 {
-    grid-area: sponsors1;
-    height: 10px;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    visibility: hidden;
-}
-section#sponsors1 img {
-    max-height: 85px;
-    align-self: center;
-    visibility: hidden;
-}
-
-section#sponsors2 {
-    grid-area: sponsors2;
-    height: 85px;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    
-}
-section#sponsors2 img {
-    max-height: 80px;
-}
-/* fin banner sponsors */
-
-
-/* Inicio Sección Jugadores de la Fecha */
-
-section#mvp {
-    margin-top: 5px;
-    grid-area: mvp;
-    background-color: #000;
-}
-
-section#mvp div#mvpfecha {
-    margin-top: 10px;
-    background-color: #000;
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;    
-
-}
-
-section#mvp div#mvpfecha article {
-    width: 320px;
-    height:250px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 11px 5px #142C57; 
-    box-shadow: 0px 0px 11px 5px #142C57;
-    margin: 10px;
-
-}
-section#mvp div#mvpfecha article p {
-   
-    color: #ffffff;
-    margin: 4px;
-    font-size: 14px;
-    text-align: justify;
-}
- 
-section#mvp div#mvpfecha article img {
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 7px;
-    text-align: center;
-    
-}
-
-section#mvp div#mvpfecha article h3 {
-    text-align: center;
-    color: #2fa72f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    line-height: break-word;
-    margin: 4px;
-}
-/* fin sección jugadores de la Fecha */
-
-/* Inicio formato Sección reglamento */
-
-section#reglamento {
-    grid-area: reglamento;
-
-}
-
-section#reglamento article p {
-    font-family: roboto;
-    color: rgb(236, 236, 236);
-    margin: 5px;
-}
-
-section#reglamento article h3 {
-    text-align: center;
-    color: #2fa72f;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    line-height: break-word;
-    margin: 4px;
-}
-
-section#reglamento article h4 {
-    color: #314ca3;
-    font-size: 13px;
-    font-family: roboto;
-    margin: 4px;
-
-}
-
-div .rules {
-    background-color: #111111;
-    color: #364959;
-    border-radius: 7px;
-    max-height: 500px;
-    max-width: 800px;
-    text-align: justify;
-    padding: 8px;
-    margin-right: 4px;
-    overflow: scroll;
-    overflow-x: hidden;
-    scroll-padding: 1px;
-    
-
-}
-
-/* inicio media query para responsive */
-
-@media screen and (min-width: 997px) {
-
-    #contenedorIndex {
-           display: grid;
-        grid-template-areas: 
-        "header"
-        "logo"
-        "noticias"
-        "sponsors1"
-        "mvp"
-        "sponsors2"
-        "footer"
-        ;
-        grid-template-rows: auto 270px 1fr 100px 1fr 100px auto;
-        width: 100%;
-        height: 100vh;
-     
-    }
-
-    div#NoticiasFecha article {
-        width: 300px;
-        height:300px;
-    }
-    
-    div#NoticiasFecha article p {
-        font-size: 12px;
-    }
-     
-    div#NoticiasFecha article img {
-        width: 100%;
-        margin-top: 0px;
-    
-    }
-  
-    section#mvp div#mvpfecha article {
-        width: 300px;
-        height:300px;
-    
-    }
-    section#mvp div#mvpfecha article p {
-        font-size: 12px;
-    
-    }
-    section#mvp div#mvpfecha article img {
-        width: 100%;
-        margin-top: 0px;
-
-    }
-
-    section#sponsors1 {
-          visibility: visible;
-          height: 85px;
-        
-    
-    }
-    section#sponsors1 img {
-          visibility: visible;
-    }
-
-    #contacto {
-        width: 84%;
-          
-    }
-    #Sociales {
-        width: 16%;
-        
-
-    }
-   
-
-}
-
-
-
-
