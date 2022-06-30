@@ -1,7 +1,10 @@
+body {
+    background-color: rgb(0, 0, 0);
+    max-width: 1980px;
+    overflow-x: hidden;
+    min-height: 100vh;
+}   
 
-.border {
-    border: 1px, solid, white;
-}
 
 .card {
     background-image: radial-gradient(circle, #70898e, #94a4ac, #b9c1c8, #dddfe4, #ffffff);
@@ -20,17 +23,10 @@
     text-align: center;
     padding: 0;
     border: 0;
-   }
-
-body {
-    background-color: black;
-          max-width: 1980px;
-          max-width: 1980px;
-
-        }        
-body section#mvp div#mvpfecha img {
-    text-align: center;
 }
+
+
+
 .noticias {
         justify-content: center;
     
@@ -39,11 +35,13 @@ body section#mvp div#mvpfecha img {
 /* Inicio Sección Jugadores de la Fecha */
 
 section#mvp {
-    
     margin-top: 10px;
     background-color: #000;
 }
 
+body section#mvp div#mvpfecha img {
+    text-align: center;
+}
 section#mvp div#mvpfecha {
     margin-top: 10px;
     background-color: #000;
@@ -94,7 +92,7 @@ section#mvp div#mvpfecha article h3 {
 /* Styling seccion reglamento */
 
 .rules {
-   
+
     background-color: #111111;
     border-radius: 7px;
     max-height: 500px;
@@ -134,9 +132,6 @@ section#reglamento h4 {
 
 }
 
-
-
-
 /* fin styling reglamento */
 
 
@@ -145,7 +140,6 @@ section#reglamento h4 {
 .fondo {
     
     background-color: black;
-
 }
 
 header a {  
@@ -153,6 +147,13 @@ header a {
     color: #ffffff;   
     display: block;
     font-family: 'Lalezar', cursive;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 footer a {  
@@ -217,5 +218,14 @@ ul.footer {
     background: rgb(0, 0, 0);
 
 }
-
 /* fin formato y efectos menu y footer */
+
+/*Media Query para alinear texto del Sandwich del Menu, segun ancho de pantalla */
+
+@media (min-width: 992px) {
+
+    li.text-left {
+        text-align: center!important;}
+  
+}
+
