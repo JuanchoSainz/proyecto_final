@@ -15,6 +15,7 @@
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">  
+    <link rel="stylesheet" href="css/galeria.css">  
     <title>TORNEO VIEJO FRANCO </title>
   </head>
   <body>
@@ -50,10 +51,49 @@
     </header>
         <!-- Final Linea superior, menu + Login Delegados en Bootstrap--> 
     <div class="fondeando col-12 container-fluid text-center">
-          <img src="img/Logo.png">
+      <img class="animacion" src="img/Logo.png">
 </div>
 
-<section id="galeria">
+  <section class="galleryContainer" id="galeria">
+  <div class="row">
+    <nav class="navMenu">
+      <a href="#"> < Anterior</a>
+      <a href="#"> - Siguiente ></a>
+      <div class="dot"></div>
+    </nav>
+  </div>
+       <input class="gallery__select" type="radio" name="gallery-select" id="0" checked="checked"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="1"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="2"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="3"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="4"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="5"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="6"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="7"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="8"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="9"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="10"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="11"/>
+    <input class="gallery__select" type="radio" name="gallery-select" id="12"/>
+      <div class="gallery">
+        <div class="gallery__filler"></div>
+        <div class="gallery__filler"></div>
+        <label class="gallery__item" for="0"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v=5" alt=""/></label>
+        <label class="gallery__item" for="1"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v=15" alt="Something random"/></label>
+        <label class="gallery__item" for="2"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==9" alt="Something random"/></label>
+        <label class="gallery__item" for="3"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==20" alt="Something random"/></label>
+        <label class="gallery__item" for="4"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==19" alt="Something random"/></label>
+        <label class="gallery__item" for="5"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==8" alt="Something random"/></label>
+        <label class="gallery__item" for="6"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==6" alt="Something random"/></label>
+        <label class="gallery__item" for="7"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==18" alt="Something random"/></label>
+        <label class="gallery__item" for="8"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==13" alt="Something random"/></label>
+        <label class="gallery__item" for="9"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==15" alt="Something random"/></label>
+        <label class="gallery__item" for="10"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==16" alt="Something random"/></label>
+        <label class="gallery__item" for="11"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==14" alt="Something random"/></label>
+        <label class="gallery__item" for="12"><img src="https://source.unsplash.com/random/400x400?soccer,&amp;v==23" alt="Something random"/></label>
+      </div>
+     
+  </div>
 
 </section>
 
@@ -62,7 +102,7 @@
  <footer>
     <nav class="navbar justify-content-between">       
           <ul class="footer">
-            <li class="social"><img src="img/favicon.png"></li>
+            <li class="social"><img class="favi" src="img/favicon.png"></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
            <ul class="footer">
